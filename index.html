@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu PARAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">🏠 Home</a></li>
+                <li><a href="#menu" onclick="showSection('menu')">🍽️ Menu</a></li>
+                <li><a href="#about" onclick="showSection('about')">ℹ️ About</a></li>
+                <li><a href="https://www.instagram.com/paras.chips/" target="_blank" class="social-icon">
+                    <img src="file:///d:/PARAS/ig2.png" alt="Instagram" class="social-img">Intagram
+                </a></li>
+        </nav>
+    </header>
+
+    <div class="container" id="home" style="display: block;">
+        <h1>Selamat Datang di PARAS!
+            TEMUKAN CEMILAN YANG AHAY
+            AWOKWOKWOKWOKWOKWOKWOK
+        </h1>
+       
+        <div class="header">
+            <div class="logo-paras">
+                <img src="file:///D:/PARAS/logonobg.png" style="max-width: 200px; height: center ; margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="menu" style="display: none;">
+        <h1>Daftar Camilan</h1>
+        <div class="menu-item">
+            <h2>PARAS COKLAT</h2>
+            <p>Pangsit gulung dengan lapisan kulit renyah yang dibalut isian cokelat. 
+                Rasa manis yang kaya, berpadu dengan tekstur garing,
+                memberikan sensasi sempurna untuk pecinta kudapan manis.</p>
+            <img src="file:///D:/PARAS/coklat.jpg" alt="PARAS COKLAT">
+            <p class="price">85g Rp.6000, 100g Rp.7000</p>
+        </div>
+        <div class="menu-item">
+            <h2>PARAS BALADO</h2>
+            <p>Pedas khas nusantara dengan aroma cabai dan rempah yang kuat.
+                Pangsit gulung balado cocok untuk Anda yang menginginkan rasa
+                pedas dengan sentuhan rempah Indonesia.</p>
+            <img src="file:///D:/PARAS/balado.jpg" alt="PARAS BALADO">
+            <p class="price">85g Rp.5000, 100g Rp.6000</p>
+        </div>
+        <div class="menu-item">
+            <h2>PARAS MACHA</h2>
+            <p>Kenikmatan teh hijau Jepang dalam bentuk pangsit gulung. 
+                Isian matcha yang lembut berpadu dengan kulit pangsit yang gurih
+                menciptakan perpaduan rasa pahit-manis yang elegan.</p>
+            <img src="file:///D:/PARAS/macha.jpg" alt="PARAS MACHA">
+            <p class="price">85g Rp.6000, 100g Rp.7000</p>
+        </div>
+        <div class="menu-item">
+            <h2>PARAS TIRAMISU</h2>
+            <p>Versi pangsit gulung yang mewah dengan isian tiramisu lembut. 
+                Gabungan rasa kopi, krim keju, dan cokelat memberikan pengalaman 
+                rasa manis yang elegan dan memanjakan.</p>
+            <img src="file:///D:/PARAS/tiramisu.jpg" alt="PARAS TIRAMISU">
+            <p class="price">85g Rp.6000, 100g Rp.7000</p>
+        </div>
+        <div class="menu-item">
+            <h2>PARAS EXTRA PEDAS</h2>
+            <p>Tantangan untuk pecinta makanan pedas! Kulit pangsit renyah diisi dengan sambal super pedas 
+                yang menggugah selera. Siapkan diri Anda untuk sensasi membara di setiap gigitan.</p>
+            <img src="file:///D:/PARAS/extrapedas.jpg" alt ="PARAS EXTRA PEDAS">
+            <p class="price">85g Rp.5000, 100g Rp.6000</p>
+        </div>
+        <div class="menu-item">
+            <h2>PARAS PEDAS ASIN</h2>
+            <p>Perpaduan unik rasa pedas dan gurih yang bikin ketagihan.
+                Kulit pangsit yang renyah berpadu dengan isian pedas berbumbu asin yang kaya rasa.</p>
+            <img src="file:///D:/PARAS/pedasasin.jpg" alt="PARAS PEDAS ASIN">
+            <p class="price">85g Rp.5000, 100g Rp.6000</p>
+        </div>
+        <div class="menu-item">
+            <h2>PARAS PEDAS MANIS</h2>
+            <p>Kombinasi sempurna antara pedas dan manis. Setiap gigitan menghadirkan rasa gurih, 
+                sedikit pedas, dan manis yang menyatu dalam harmoni yang lezat.</p>
+            <img src="file:///D:/PARAS/pedasmanis.jpg" alt="PARAS PEDAS MANIS">
+            <p class="price">85g Rp.5000, 100g Rp.6000</p>
+        </div>
+    </div>
+    <div class="container" id="about" style="display: none;">
+        <h1>Tentang PARAS</h1>
+        <p>PARAS adalah tempat terbaik untuk menemukan berbagai camilan lezat yang terinspirasi dari cita rasa lokal dan internasional. 
+           Kami berkomitmen untuk memberikan pengalaman kuliner yang unik dan memuaskan bagi setiap pelanggan.</p>
+        <p>Kami menggunakan bahan-bahan berkualitas tinggi dan resep yang telah teruji untuk memastikan setiap gigitan adalah kenikmatan.</p>
+        <p>Selamat menikmati camilan kami!</p>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Sembunyikan semua kontainer
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Tampilkan kontainer yang dipilih
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 PARAS. KAMI JUALAN SUKA-SUKA,
+            KALAU GAG MOOD, GAG JUALAN BOY!!!.</p>
+    </footer>
+</body>
+</html>

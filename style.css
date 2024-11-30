@@ -1,0 +1,169 @@
+
+.container#menu {
+  display: block; /* Tampilkan kontainer menu */
+  background-image: pink; /* Ganti dengan path ke GIF Anda */
+  background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  padding: 70px; /* Tambahkan padding untuk menu */
+  color: black; /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang */
+}
+.container#about {
+  display: block; /* Tampilkan kontainer about */
+  background-image: url('file:///D:/PARAS/baground.gif'); /* Ganti dengan path ke GIF Anda */
+  background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  padding: 40px; /* Tambahkan padding untuk about */
+  color: black; /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang */
+  text-align: center; /* Pusatkan teks di bagian about */
+  font-weight: bold; 
+}
+.social-icon {
+  display: inline-block; /* Menampilkan ikon sebagai blok inline */
+  transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Membesar saat hover */
+}
+
+.social-img {
+  width: 30px; /* Lebar ikon */
+  height: 30px; /* Tinggi ikon */
+  vertical-align: middle; /* Pusatkan ikon secara vertikal */
+}
+
+.social-icon:hover {
+  color: #ff9900; /* Warna saat hover */
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:  url('file:///D:/PARAS/baground2.gif');/* Warna latar belakang halaman */
+}
+
+header {
+  background-color: #333; /* Warna latar belakang header */
+  padding: 5px 0; /* Ruang di atas dan bawah */
+}
+
+.navbar ul {
+  list-style-type: none; /* Menghapus bullet point */
+  padding: 0; /* Menghapus padding */
+  text-align: center; /* Pusatkan daftar */
+}
+
+.navbar ul li {
+  display: inline; /* Menampilkan item dalam satu baris */
+  margin: 0 20px; /* Ruang antar item */
+}
+
+.navbar a {
+  color: #333; /* Warna teks tautan */
+  text-decoration: none; /* Menghapus garis bawah */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Font playful */
+  font-size: 1.2em; /* Ukuran font */
+  padding: 10px 15px; /* Ruang di dalam tautan */
+  border-radius: 5px; /* Sudut melengkung */
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek */
+}
+
+.navbar a:hover {
+  background-color: #ff9900; /* Warna latar belakang saat hover */
+  color: #fff; /* Warna teks saat hover */
+  transform: scale(1.1); /* Membesar saat hover */
+}
+.p {
+  font-size: 1.2em; /* Ukuran font */
+  color: black; /* Warna teks */
+}
+
+.container {
+  display: none; /* Sembunyikan semua kontainer secara default */
+  padding: 20px;
+  max-width: 600px; /* Lebar maksimum kontainer */
+  margin: 20px auto; /* Pusatkan di halaman */
+  background: white; /* Warna latar belakang kontainer */
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+}
+
+footer {
+  background-color: #333; /* Warna latar belakang footer */
+  color: white; /* Warna teks */
+  text-align: center; /* Pusatkan teks */
+  padding: 10px 0; /* Ruang di atas dan bawah */
+  position: fixed ; /* Posisi relatif untuk footer */
+  bottom: 0; /* Menempatkan footer di bagian bawah */
+  width: 100%; /* Lebar penuh */
+}
+.container#home {
+  display: block; /* Tampilkan kontainer home secara default */
+  text-align: center; /* Pusatkan teks di halaman home */
+  background-color: pink;
+  color: black;
+}
+@keyframes moveText {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(10px); /* Geser sedikit ke kanan */
+  }
+  100% {
+      transform: translateX(0); /* Kembali ke posisi semula */
+  }
+}
+
+.container#home h1,
+
+.container#home p {
+  animation: moveText 1.5s ease-in-out infinite; /* Menambahkan animasi pada teks */
+}
+
+.container#home {
+  display: block; /* Tampilkan kontainer home */
+  animation: fadeIn 1s ease-in-out; /* Menambahkan animasi fadeIn */
+  text-align: center; /* Pusatkan teks di halaman home */
+  padding: 40px; /* Tambahkan padding */
+  color: #333; /* Warna teks */
+}
+
+
+.container#menu {
+  display: block; /* Tampilkan kontainer menu */
+  background-color: pink; /* Warna latar belakang untuk menu */
+  padding: 40px; /* Tambahkan padding untuk menu */
+}
+
+.menu-item {
+  background-color: palevioletred; /* Warna latar belakang item menu */
+  border: 1px solid #ccc; /* Garis batas */
+  border-radius: 15px; /* Sudut melengkung */
+  padding: 5px; /* Ruang di dalam item (dikurangi untuk tampilan lebih rapi) */
+  margin: 5px; /* Ruang antar item */
+  text-align: center; /* Pusatkan teks */
+  transition: transform 0.3s ease; /* Transisi untuk efek zoom */
+  cursor: pointer; /* Ubah kursor saat hover */
+}
+.menu-item p{
+  margin-top: 5px; /* Tambahkan ruang di atas teks */
+  font-size: 1.2em; /* Ukuran font */
+  color: white; /* Warna teks */
+  text-decoration: none; /* Menghapus garis bawah */
+  display: block; /* Tampilkan teks di dalam item */
+  padding: 5px; /* Tambahkan padding di dalam item */
+}
+.menu-item:hover {
+  transform: scale(1.05); /* Membesar saat hover */
+}
+
+.menu-item img {
+  max-width: 40%; /* Membuat gambar responsif */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.price {
+  font-weight: bold; /* Menebalkan harga */
+  color: brown; /* Warna harga */
+}
